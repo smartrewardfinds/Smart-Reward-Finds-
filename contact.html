@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Contact — Smart Reward Finds</title>
+<meta name="description" content="Get in touch with Smart Reward Finds. Report broken links, submit feedback, ask a question, or recommend an offer or tool for review."/>
+<link rel="icon" type="image/png" href="/images/logo.png"/>
+<link rel="stylesheet" href="/style.css"/>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <div class="header-inner">
+      <a class="logo" href="/index.html">
+        <img src="/images/logo.png" alt="Smart Reward Finds Logo" width="46" height="46"/>
+        <div>
+          <div class="logo-name">Smart <span>Reward</span> Finds</div>
+          <div class="logo-tag">Legit Finds. Real Rewards.</div>
+        </div>
+      </a>
+      <nav class="nav">
+        <a href="/index.html">Home</a>
+        <a href="/blog.html">Blog</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html" class="active">Contact</a>
+        <a class="nav-cta" href="/blog.html">Explore Finds &rarr;</a>
+      </nav>
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="mobile-nav">
+    <a href="/index.html">Home</a>
+    <a href="/blog.html">Blog</a>
+    <a href="/about.html">About</a>
+    <a href="/contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="section-label">Get in Touch</span>
+    <h1>Contact Smart Reward Finds</h1>
+    <p>Have a question, broken link to report, or a suggestion? Fill out the form below and we will get back to you as soon as we can.</p>
+  </div>
+</section>
+
+<div class="container">
+  <div class="contact-layout">
+
+    <!-- Form -->
+    <div>
+      <div class="form-card">
+        <h2>Send Us a Message</h2>
+        <p>Fields marked <span style="color:var(--coral)">*</span> are required.</p>
+
+        <form id="contact-form">
+          <input type="hidden" name="_replyto" id="replyto"/>
+
+          <div class="form-group">
+            <label for="name">Full Name <span class="req">*</span></label>
+            <input type="text" id="name" name="name" class="form-control" placeholder="Your full name" required autocomplete="name"/>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address <span class="req">*</span></label>
+            <input type="email" id="email" name="email" class="form-control" placeholder="your@email.com" required autocomplete="email"/>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number <span style="color:var(--muted);font-weight:400;font-size:0.8rem">(optional)</span></label>
+            <input type="tel" id="phone" name="phone" class="form-control" placeholder="+1 (555) 000-0000" autocomplete="tel"/>
+          </div>
+
+          <div class="form-group">
+            <label for="reason">Reason for Message <span class="req">*</span></label>
+            <select id="reason" name="reason" class="form-control" required>
+              <option value="" disabled selected>Select a reason...</option>
+              <option value="General Question">General Question</option>
+              <option value="Broken Link or Expired Offer">Broken Link or Expired Offer</option>
+              <option value="Feedback or Suggestion">Feedback or Suggestion</option>
+              <option value="Correction or Update">Correction or Update</option>
+              <option value="Partnership Inquiry">Partnership Inquiry</option>
+              <option value="Offer / Tool Recommendation">Offer / Tool Recommendation</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Additional Message <span class="req">*</span></label>
+            <textarea id="message" name="message" class="form-control" placeholder="Please provide any additional details here..." required rows="5"></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn" id="submit-btn">Send Message &rarr;</button>
+          <p class="form-note">We aim to respond within 2-3 business days. For account support with a third-party service, please contact that provider directly.</p>
+        </form>
+
+        <div class="form-success" id="form-success">
+          <h3>&#9989; Message Sent!</h3>
+          <p>Thanks for reaching out. We will get back to you within 2-3 business days.</p>
+        </div>
+        <div class="form-error" id="form-error">
+          Something went wrong. Please try again.
+        </div>
+      </div>
+    </div>
+
+    <!-- Sidebar info -->
+    <aside class="sidebar">
+      <div class="sidebar-box">
+        <h3>&#128140; What You Can Contact Us About</h3>
+        <div style="display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;gap:12px;align-items:flex-start">
+            <div style="width:32px;height:32px;background:#FFF0F3;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1rem">&#128279;</div>
+            <div><strong style="font-family:'Nunito',sans-serif;font-size:0.88rem;display:block;margin-bottom:2px">Broken Links / Expired Offers</strong><span style="font-size:0.84rem;color:var(--muted)">Found something that does not work? Let us know.</span></div>
+          </div>
+          <div style="display:flex;gap:12px;align-items:flex-start">
+            <div style="width:32px;height:32px;background:#FFF0F3;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1rem">&#128172;</div>
+            <div><strong style="font-family:'Nunito',sans-serif;font-size:0.88rem;display:block;margin-bottom:2px">Feedback &amp; Suggestions</strong><span style="font-size:0.84rem;color:var(--muted)">Ideas to improve the site or topics we should cover.</span></div>
+          </div>
+          <div style="display:flex;gap:12px;align-items:flex-start">
+            <div style="width:32px;height:32px;background:#FFF0F3;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1rem">&#9997;&#65039;</div>
+            <div><strong style="font-family:'Nunito',sans-serif;font-size:0.88rem;display:block;margin-bottom:2px">Corrections &amp; Updates</strong><span style="font-size:0.84rem;color:var(--muted)">Spotted something inaccurate? We appreciate corrections.</span></div>
+          </div>
+          <div style="display:flex;gap:12px;align-items:flex-start">
+            <div style="width:32px;height:32px;background:#FFF0F3;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1rem">&#129309;</div>
+            <div><strong style="font-family:'Nunito',sans-serif;font-size:0.88rem;display:block;margin-bottom:2px">Partnership Inquiries</strong><span style="font-size:0.84rem;color:var(--muted)">Have an offer or tool you would like us to review?</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="notice-box">
+        <strong>&#9888;&#65039; Third-Party Support Notice</strong><br/><br/>
+        Smart Reward Finds does <em>not</em> manage third-party offer accounts, handle payouts, deliver rewards, or provide customer support for external platforms. For account-specific issues, please contact the official provider directly.
+      </div>
+
+      <div class="sidebar-box">
+        <h3>Helpful Links</h3>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <a href="/affiliate-disclosure.html" style="color:var(--coral);font-size:0.9rem;font-family:'Nunito',sans-serif;font-weight:700">Affiliate Disclosure</a>
+          <a href="/privacy-policy.html" style="color:var(--coral);font-size:0.9rem;font-family:'Nunito',sans-serif;font-weight:700">Privacy Policy</a>
+          <a href="/disclaimer.html" style="color:var(--coral);font-size:0.9rem;font-family:'Nunito',sans-serif;font-weight:700">Disclaimer</a>
+          <a href="/about.html" style="color:var(--coral);font-size:0.9rem;font-family:'Nunito',sans-serif;font-weight:700">About Smart Reward Finds</a>
+        </div>
+      </div>
+    </aside>
+
+  </div>
+</div>
+
+<div class="pinterest-band">
+  <div class="container">
+    <h2>&#128204; Follow Smart Reward Finds on Pinterest</h2>
+    <p>Save your favorite finds and share legit reward guides with your circle.</p>
+    <a class="btn btn-pinterest" href="https://pinterest.com/smartrewardfinds" target="_blank" rel="noopener">Follow on Pinterest</a>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <img src="/images/logo.png" alt="Smart Reward Finds" width="44" height="44"/>
+          <div class="footer-brand-name">Smart <span>Reward</span><br/>Finds</div>
+        </div>
+        <p class="footer-tagline">Your curated resource for legit gift card giveaways, smart tools, trusted offers, and useful product finds.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/blog.html">Blog</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal &amp; Trust</h4>
+        <ul>
+          <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="/affiliate-disclosure.html">Affiliate Disclosure</a></li>
+          <li><a href="/disclaimer.html">Disclaimer</a></li>
+          <li><a href="/editorial-policy.html">Editorial Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Smart Reward Finds. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="/privacy-policy.html">Privacy</a>
+        <a href="/affiliate-disclosure.html">Disclosure</a>
+        <a href="/disclaimer.html">Disclaimer</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/script.js"></script>
+</body>
+</html>
